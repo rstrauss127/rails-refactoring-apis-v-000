@@ -16,4 +16,7 @@ class GithubService
     body = JSON.parse(response.body)
     body["login"]
   end
+
+  def get_repos
+  end
 end
