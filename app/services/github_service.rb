@@ -11,4 +11,6 @@ class GithubService
     @access_token = access_hash["access_token"]
   end
 
+  def get_username
+  end
 end
