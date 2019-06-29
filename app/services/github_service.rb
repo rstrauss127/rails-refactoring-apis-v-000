@@ -25,6 +25,5 @@ class GithubService
 
   def create_repo(title)
     response = Faraday.post "https://api.github.com/user/repos", {name: title}.to_json, {'Authorization' => "token #{self.access_token}", 'Accept' => 'application/json'}
-    redirect_to '/'
   end
 end
