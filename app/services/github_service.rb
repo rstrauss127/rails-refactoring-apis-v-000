@@ -12,7 +12,7 @@ class GithubService
   end
 
   def get_username
-    response = Farady.get "https://api.github.com/user", {"Authorization: token" self.access_token}
+    response = Farady.get "https://api.github.com/user", {"Authorization: token " + self.access_token}
 
   end
 end
