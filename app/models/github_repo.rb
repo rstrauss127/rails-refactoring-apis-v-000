@@ -1,0 +1,2 @@
+class GithubRepo < ApplicationRecord
+end
