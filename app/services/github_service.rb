@@ -22,4 +22,7 @@ class GithubService
     repos_array = JSON.parse(response.body)
     repos_array.map{|r| GithubRepo.new(r)}
   end
+
+  def create_repo()
+  end
 end
