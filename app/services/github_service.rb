@@ -13,7 +13,7 @@ class GithubService
 
   def get_username
     response = Farady.get("https://api.github.com/user") do |req|
-      req.params['oauth2_token']
+      req.params['oauth2_token'] = self.access_token
     end
   end
 end
