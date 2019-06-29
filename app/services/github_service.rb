@@ -12,5 +12,6 @@ class GithubService
   end
 
   def get_username
+    response = Farady.get("https://api.github.com/user")
   end
 end
